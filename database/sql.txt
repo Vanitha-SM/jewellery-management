@@ -1,0 +1,49 @@
+mysql> desc sales;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| bno      | int         | YES  |     | NULL    |       |
+| bdate    | date        | YES  |     | NULL    |       |
+| itemcode | varchar(10) | YES  | MUL | NULL    |       |
+| rate     | int         | YES  |     | NULL    |       |
+| weight   | float       | YES  |     | NULL    |       |
+| wastage  | int         | YES  |     | NULL    |       |
+| mc       | int         | YES  |     | NULL    |       |
+| amt      | float       | YES  |     | NULL    |       |
+| tax      | float       | YES  |     | NULL    |       |
+| total    | float       | YES  |     | NULL    |       |
+| cmob     | varchar(15) | YES  | MUL | NULL    |       |
+| spcode   | varchar(10) | YES  | MUL | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+mysql> desc customer;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| cname | varchar(100) | YES  |     | NULL    |       |
+| cadd  | varchar(255) | YES  |     | NULL    |       |
+| cmob  | varchar(15)  | NO   | PRI | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+
+ desc purchase;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| pdate    | date         | YES  |     | NULL    |       |
+| itemcode | varchar(10)  | NO   | PRI | NULL    |       |
+| itemname | varchar(100) | YES  |     | NULL    |       |
+| qty      | int          | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+
+
+mysql> desc employee;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| ecode  | varchar(10)  | NO   | PRI | NULL    |       |
+| ename  | varchar(100) | YES  |     | NULL    |       |
+| edes   | varchar(50)  | YES  |     | NULL    |       |
+| esal   | int          | YES  |     | NULL    |       |
+| eadd   | varchar(255) | YES  |     | NULL    |       |
+| ephone | varchar(15)  | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
